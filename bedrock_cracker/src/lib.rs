@@ -2,6 +2,9 @@ mod block_data;
 mod layer;
 pub mod raw_data;
 
+#[cfg(feature = "jni")]
+mod jni_bridge;
+
 use std::cmp::min;
 
 use std::{thread};
